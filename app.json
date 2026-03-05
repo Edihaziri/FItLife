@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "ediapp",
+    "slug": "ediapp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSMotionUsageDescription": "Ky aplikacion përdor sensorin e hapave për të numëruar aktivitetin tënd fizik gjatë stërvitjeve dhe për të llogaritur kaloritë e djegura.",
+        "NSPhotoLibraryUsageDescription": "Lejo qasje në galeri për të ngarkuar foto PARA dhe PAS të transformimit tënd.",
+        "NSCameraUsageDescription": "Lejo qasje në kamerë për të marrë foto të reja të transformimit tënd."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "android.permission.ACTIVITY_RECOGNITION",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.CAMERA"
+      ],
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-sensors",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Lejo $(PRODUCT_NAME) të qaset në fotot e tua për të ngarkuar imazhe PARA dhe PAS."
+        }
+      ]
+    ]
+  }
+}
